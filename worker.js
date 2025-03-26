@@ -10,6 +10,7 @@ async function handleRequest(request) {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Irmãos Dias Barbearia</title>
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/ErickhReiz/Barbearia_pedro/refs/heads/main/favicons/favicon.ico" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
