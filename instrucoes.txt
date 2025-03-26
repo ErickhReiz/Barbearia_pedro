@@ -1,0 +1,56 @@
+Plano A – Landing Page no Seu Subdomínio
+💰 Preço: R$XX/mês ou R$XX único
+✅ Hospedagem no seu subdomínio (ex: cliente.seudominio.com)
+✅ Customização básica (cores, logo, textos)
+✅ Integração com formulário de contato
+
+Plano B – Landing Page + 1 Ano de Domínio Próprio
+💰 Preço: R$XX/ano
+✅ Tudo do Plano A
+✅ Domínio próprio .com.br (ex: clienteloja.com.br)
+✅ Certificado SSL incluso
+✅ Suporte técnico básico
+
+Plano C – Landing Page + Domínio + E-mail Profissional
+💰 Preço: R$XX/ano
+✅ Tudo do Plano B
+✅ 1 conta de e-mail profissional (ex: contato@clienteloja.com.br)
+✅ Integração com WhatsApp Business e redes sociais
+✅ Opção de blog ou página extra
+
+Plano D – Landing Page Otimizada para Vendas
+💰 Preço: R$XX/ano
+✅ Tudo do Plano C
+✅ Copywriting otimizado para conversão
+✅ Teste A/B de elementos da página
+✅ Integração com Google Analytics e Pixel do Facebook
+
+Plano E – Landing Page + Gestão de Tráfego Inicial
+💰 Preço: R$XX/mês
+✅ Tudo do Plano D
+✅ Configuração de anúncios no Google Ads/Facebook Ads
+✅ Relatório mensal de acessos e conversões
+✅ Ajustes estratégicos baseados em dados
+
+Plano F – Landing Page + Automação de Marketing
+💰 Preço: R$XX/mês
+✅ Tudo do Plano E
+✅ CRM integrado para capturar leads
+✅ Automação de e-mails (ex: Mailchimp, RD Station)
+✅ Sequência de e-mails personalizada para nutrição de leads
+
+Plano G – Landing Page Premium + Gestão Completa
+💰 Preço: R$XX/mês
+✅ Tudo do Plano F
+✅ Manutenção contínua da landing page (alterações mensais)
+✅ Criação de novos conteúdos e imagens sob demanda
+✅ Gestão completa de tráfego e remarketing
+
+Extras/Upgrades 💡
+Hospedagem extra rápida (Cloudflare, AWS, etc.)
+
+SEO avançado para melhorar rankeamento
+
+Chatbot IA para atendimento automático
+
+Área de membros/produto digital
