@@ -9,13 +9,12 @@ async function handleRequest(request) {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TimeLine Soluções</title>
-    <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/97408981?s=40&v=4" type="image/x-icon">
+    <title>Irmãos Dias Barbearia</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
       rel="stylesheet"
     />
     <link
@@ -27,11 +26,8 @@ async function handleRequest(request) {
         theme: {
           extend: {
             colors: {
-              primary: "#172D44",
-              secondary: "#FF7F11",
-              black: "#2F2F2F",
-              white: "#E2E8CE",
-              soft: "#ACBFA4",
+              primary: "#B8860B",
+              secondary: "#1F1F1F",
             },
             borderRadius: {
               none: "0px",
@@ -45,10 +41,6 @@ async function handleRequest(request) {
               full: "9999px",
               button: "8px",
             },
-            fontFamily: {
-              'montserrat': ['Montserrat', 'sans-serif'],
-              'roboto': ['Roboto', 'sans-serif'],
-            }
           },
         },
       };
@@ -65,76 +57,110 @@ async function handleRequest(request) {
       }
     </style>
   </head>
-  <body class="bg-white font-roboto">
+  <body class="bg-white">
     <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
       <nav class="container mx-auto px-6 py-4">
         <div class="flex items-center justify-between">
-          <h1 class="text-3xl font-montserrat font-bold text-primary">TimeLine</h1>
+          <h1 class="text-3xl font-['Pacifico'] text-primary">Irmãos Dias</h1>
           <div class="hidden md:flex space-x-8">
-            <a href="#inicio" class="text-black hover:text-secondary">Início</a>
-            <a href="#solucoes" class="text-black hover:text-secondary">Soluções</a>
-            <a href="#planos" class="text-black hover:text-secondary">Planos</a>
-            <a href="#cases" class="text-black hover:text-secondary">Cases</a>
-            <a href="#contato" class="text-black hover:text-secondary">Contato</a>
+            <a href="#inicio" class="text-gray-700 hover:text-primary"
+              >Início</a
+            >
+            <a href="#servicos" class="text-gray-700 hover:text-primary"
+              >Serviços</a
+            >
+            <a href="#planos" class="text-gray-700 hover:text-primary"
+              >Planos</a
+            >
+            <a href="#galeria" class="text-gray-700 hover:text-primary"
+              >Galeria</a
+            >
+            <a href="#unidades" class="text-gray-700 hover:text-primary"
+              >Unidades</a
+            >
           </div>
-          <button class="bg-secondary text-white px-6 py-2 rounded-md hover:bg-secondary/90">
-            Fale Conosco
-          </button>
+          <a
+            href="https://cashbarber.com.br/irmaosdias"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button
+              class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90"
+            >
+              Agendar
+            </button>
+          </a>
         </div>
       </nav>
     </header>
 
     <main>
       <section id="inicio" class="relative h-screen">
-        <div class="absolute inset-0 bg-cover bg-center"
-          style="background-image: url('https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
-        </div>
-        <div class="absolute inset-0 bg-primary/80"></div>
+        <div
+          class="absolute inset-0 bg-cover bg-center"
+          style="
+            background-image: url('https://public.readdy.ai/ai/img_res/2528ae6f652fe85b988e635be717ed89.jpg');
+          "
+        ></div>
+        <div class="absolute inset-0 bg-black/50"></div>
         <div class="relative container mx-auto px-6 h-full flex items-center">
           <div class="max-w-2xl text-white">
-            <h2 class="text-5xl font-montserrat font-bold mb-6">Transformação Digital para seu Negócio</h2>
-            <p class="text-xl mb-8 font-roboto">
-              Soluções tecnológicas personalizadas para impulsionar sua empresa ao próximo nível.
-              Desenvolvimento web, automação e consultoria especializada.
+            <h2 class="text-5xl font-bold mb-6">Excelência em Barbearia</h2>
+            <p class="text-xl mb-8">
+              Transforme seu visual com os melhores profissionais do mercado.
+              Experiência única em um ambiente sofisticado.
             </p>
-            <button class="bg-secondary text-white px-8 py-3 rounded-md hover:bg-secondary/90">
-              Conheça Nossas Soluções
+            <button
+              class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-primary/90"
+            >
+              Agende seu Horário
             </button>
           </div>
         </div>
       </section>
 
-      <section id="solucoes" class="py-20 bg-soft/10">
+      <section id="servicos" class="py-20 bg-gray-50">
         <div class="container mx-auto px-6">
-          <h2 class="text-4xl font-montserrat font-bold text-center mb-16">Nossas Soluções</h2>
+          <h2 class="text-4xl font-bold text-center mb-16">Nossos Serviços</h2>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="service-card bg-white p-8 rounded-lg shadow-lg transition-all duration-300">
-              <div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mb-6">
-                <i class="ri-code-line text-primary text-2xl"></i>
+            <div
+              class="service-card bg-white p-8 rounded-lg shadow-lg transition-all duration-300"
+            >
+              <div
+                class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mb-6"
+              >
+                <i class="ri-scissors-line text-primary text-2xl"></i>
               </div>
-              <h3 class="text-xl font-bold mb-4">Desenvolvimento Web</h3>
+              <h3 class="text-xl font-bold mb-4">Corte Clássico</h3>
               <p class="text-gray-600">
-                Landing pages otimizadas, sites institucionais e sistemas web personalizados para sua empresa.
+                Corte tradicional com acabamento impecável e atenção aos
+                detalhes.
               </p>
             </div>
-            
-            <div class="service-card bg-white p-8 rounded-lg shadow-lg transition-all duration-300">
-              <div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mb-6">
-                <i class="ri-settings-line text-primary text-2xl"></i>
+            <div
+              class="service-card bg-white p-8 rounded-lg shadow-lg transition-all duration-300"
+            >
+              <div
+                class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mb-6"
+              >
+                <i class="ri-brush-line text-primary text-2xl"></i>
               </div>
-              <h3 class="text-xl font-bold mb-4">Automação</h3>
+              <h3 class="text-xl font-bold mb-4">Barba</h3>
               <p class="text-gray-600">
-                Automatize processos e aumente a eficiência do seu negócio com nossas soluções inteligentes.
+                Modelagem completa com toalha quente e produtos premium.
               </p>
             </div>
-
-            <div class="service-card bg-white p-8 rounded-lg shadow-lg transition-all duration-300">
-              <div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mb-6">
-                <i class="ri-line-chart-line text-primary text-2xl"></i>
+            <div
+              class="service-card bg-white p-8 rounded-lg shadow-lg transition-all duration-300"
+            >
+              <div
+                class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mb-6"
+              >
+                <i class="ri-paint-brush-line text-primary text-2xl"></i>
               </div>
-              <h3 class="text-xl font-bold mb-4">Consultoria</h3>
+              <h3 class="text-xl font-bold mb-4">Pigmentação</h3>
               <p class="text-gray-600">
-                Análise estratégica e implementação de soluções tecnológicas para otimizar seu negócio.
+                Correção de falhas e pigmentação natural para barba e cabelo.
               </p>
             </div>
           </div>
@@ -143,77 +169,92 @@ async function handleRequest(request) {
 
       <section id="planos" class="py-20">
         <div class="container mx-auto px-6">
-          <h2 class="text-4xl font-montserrat font-bold text-center mb-16">Nossos Planos</h2>
+          <h2 class="text-4xl font-bold text-center mb-16">Planos Mensais</h2>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-white p-8 rounded-lg shadow-lg border border-gray-200">
-              <h3 class="text-2xl font-bold mb-4">Plano A – Landing Page no Seu Subdomínio</h3>
-              <p class="text-gray-600 mb-6">Landing Page no Seu Subdomínio</p>
+            <div
+              class="bg-white p-8 rounded-lg shadow-lg border border-gray-200"
+            >
+              <h3 class="text-2xl font-bold mb-4">Básico</h3>
+              <p class="text-gray-600 mb-6">Ideal para manutenção mensal</p>
               <div class="text-3xl font-bold mb-6">
-                R$XX/mês ou R$XX único
+                R$ 89,90<span class="text-sm text-gray-500">/mês</span>
               </div>
               <ul class="space-y-3 mb-8">
                 <li class="flex items-center">
-                  <i class="ri-check-line text-secondary mr-2"></i>Hospedagem no seu subdomínio
+                  <i class="ri-check-line text-primary mr-2"></i>1 Corte por mês
                 </li>
                 <li class="flex items-center">
-                  <i class="ri-check-line text-secondary mr-2"></i>Customização básica
-                </li>
-                <li class="flex items-center">
-                  <i class="ri-check-line text-secondary mr-2"></i>Integração com formulário de contato
+                  <i class="ri-check-line text-primary mr-2"></i>1 Barba por mês
                 </li>
               </ul>
-              <button class="w-full bg-primary text-white py-3 rounded-md hover:bg-primary/90">
-                Começar Agora
-              </button>
-            </div>
-            <div class="bg-white p-8 rounded-lg shadow-lg border-2 border-primary relative">
-              <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-sm">
-                Mais Popular
-              </div>
-              <h3 class="text-2xl font-bold mb-4">Plano B – Landing Page + 1 Ano de Domínio Próprio</h3>
-              <p class="text-gray-600 mb-6">Para quem busca mais cuidados</p>
-              <div class="text-3xl font-bold mb-6">
-                R$XX/ano
-              </div>
-              <ul class="space-y-3 mb-8">
-                <li class="flex items-center">
-                  <i class="ri-check-line text-primary mr-2"></i>Tudo do Plano A
-                </li>
-                <li class="flex items-center">
-                  <i class="ri-check-line text-primary mr-2"></i>Domínio próprio .com.br
-                </li>
-                <li class="flex items-center">
-                  <i class="ri-check-line text-primary mr-2"></i>Certificado SSL incluso
-                </li>
-                <li class="flex items-center">
-                  <i class="ri-check-line text-primary mr-2"></i>Suporte técnico básico
-                </li>
-              </ul>
-              <button class="w-full bg-primary text-white py-3 rounded-md hover:bg-primary/90">
+              <button
+                class="w-full bg-primary text-white py-3 !rounded-button hover:bg-primary/90"
+              >
                 Assinar Agora
               </button>
             </div>
-            <div class="bg-white p-8 rounded-lg shadow-lg border border-gray-200">
-              <h3 class="text-2xl font-bold mb-4">Plano C – Landing Page + Domínio + E-mail Profissional</h3>
-              <p class="text-gray-600 mb-6">Experiência VIP completa</p>
+            <div
+              class="bg-white p-8 rounded-lg shadow-lg border-2 border-primary relative"
+            >
+              <div
+                class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-sm"
+              >
+                Mais Popular
+              </div>
+              <h3 class="text-2xl font-bold mb-4">Premium</h3>
+              <p class="text-gray-600 mb-6">Para quem busca mais cuidados</p>
               <div class="text-3xl font-bold mb-6">
-                R$XX/ano
+                R$ 159,90<span class="text-sm text-gray-500">/mês</span>
               </div>
               <ul class="space-y-3 mb-8">
                 <li class="flex items-center">
-                  <i class="ri-check-line text-primary mr-2"></i>Tudo do Plano B
+                  <i class="ri-check-line text-primary mr-2"></i>2 Cortes por
+                  mês
                 </li>
                 <li class="flex items-center">
-                  <i class="ri-check-line text-primary mr-2"></i>1 conta de e-mail profissional
+                  <i class="ri-check-line text-primary mr-2"></i>2 Barbas por
+                  mês
                 </li>
                 <li class="flex items-center">
-                  <i class="ri-check-line text-primary mr-2"></i>Integração com WhatsApp Business e redes sociais
-                </li>
-                <li class="flex items-center">
-                  <i class="ri-check-line text-primary mr-2"></i>Opção de blog ou página extra
+                  <i class="ri-check-line text-primary mr-2"></i>Hidratação
+                  capilar
                 </li>
               </ul>
-              <button class="w-full bg-primary text-white py-3 rounded-md hover:bg-primary/90">
+              <button
+                class="w-full bg-primary text-white py-3 !rounded-button hover:bg-primary/90"
+              >
+                Assinar Agora
+              </button>
+            </div>
+            <div
+              class="bg-white p-8 rounded-lg shadow-lg border border-gray-200"
+            >
+              <h3 class="text-2xl font-bold mb-4">Black</h3>
+              <p class="text-gray-600 mb-6">Experiência VIP completa</p>
+              <div class="text-3xl font-bold mb-6">
+                R$ 249,90<span class="text-sm text-gray-500">/mês</span>
+              </div>
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center">
+                  <i class="ri-check-line text-primary mr-2"></i>Cortes
+                  ilimitados
+                </li>
+                <li class="flex items-center">
+                  <i class="ri-check-line text-primary mr-2"></i>Barbas
+                  ilimitadas
+                </li>
+                <li class="flex items-center">
+                  <i class="ri-check-line text-primary mr-2"></i>Todos os
+                  tratamentos
+                </li>
+                <li class="flex items-center">
+                  <i class="ri-check-line text-primary mr-2"></i>Bebidas
+                  inclusas
+                </li>
+              </ul>
+              <button
+                class="w-full bg-primary text-white py-3 !rounded-button hover:bg-primary/90"
+              >
                 Assinar Agora
               </button>
             </div>
@@ -298,16 +339,59 @@ async function handleRequest(request) {
         </div>
       </section>
 
+      <section id="galeria" class="py-20">
+        <div class="container mx-auto px-6">
+          <h2 class="text-4xl font-bold text-center mb-16">Galeria</h2>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div
+              class="gallery-image aspect-square rounded-lg overflow-hidden transition-all duration-300"
+            >
+              <img
+                src="https://public.readdy.ai/ai/img_res/a30c7be66e423a062588a86fb2e45573.jpg"
+                class="w-full h-full object-cover"
+                alt="Corte Masculino"
+              />
+            </div>
+            <div
+              class="gallery-image aspect-square rounded-lg overflow-hidden transition-all duration-300"
+            >
+              <img
+                src="https://public.readdy.ai/ai/img_res/d011c6a4da1e8a59b4939fec465b79c2.jpg"
+                class="w-full h-full object-cover"
+                alt="Barba"
+              />
+            </div>
+            <div
+              class="gallery-image aspect-square rounded-lg overflow-hidden transition-all duration-300"
+            >
+              <img
+                src="https://public.readdy.ai/ai/img_res/4882044e9e24e189513dfb96bec04f1f.jpg"
+                class="w-full h-full object-cover"
+                alt="Ambiente"
+              />
+            </div>
+            <div
+              class="gallery-image aspect-square rounded-lg overflow-hidden transition-all duration-300"
+            >
+              <img
+                src="https://public.readdy.ai/ai/img_res/ff355823b48c39c1852887d817985bf9.jpg"
+                class="w-full h-full object-cover"
+                alt="Profissional"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer class="bg-primary text-white py-12">
+    <footer class="bg-secondary text-white py-12">
       <div class="container mx-auto px-6 text-center">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div class="flex flex-col items-center">
-            <h3 class="font-montserrat text-2xl font-bold text-secondary mb-4">
-              TimeLine
+            <h3 class="font-['Pacifico'] text-2xl text-primary mb-4">
+              Irmãos Dias
             </h3>
-            <p class="text-soft">Soluções tecnológicas para seu negócio.</p>
+            <p class="text-gray-400">Excelência em barbearia desde 2020.</p>
           </div>
           <div class="flex flex-col items-center">
             <h4 class="text-lg font-bold mb-4">Contato</h4>
@@ -339,7 +423,7 @@ async function handleRequest(request) {
           class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400"
         >
           <p>
-            &copy; 2025 Time Line. Todos os direitos reservados.
+            &copy; 2025 Irmãos Dias Barbearia. Todos os direitos reservados.
           </p>
         </div>
       </div>
@@ -351,6 +435,13 @@ async function handleRequest(request) {
         class="w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center shadow-lg hover:bg-green-600"
       >
         <i class="ri-whatsapp-line text-2xl"></i>
+      </a>
+      <a
+        href="https://cashbarber.com.br/irmaosdias"
+        target="_blank"
+        class="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center shadow-lg hover:bg-primary/90"
+      >
+        <i class="ri-calendar-line text-2xl"></i>
       </a>
     </div>
     <script>
@@ -366,7 +457,8 @@ async function handleRequest(request) {
       });
     </script>
   </body>
-</html>`;
+</html>
+`;
 
   // Retorna o HTML como resposta
   return new Response(html, {
